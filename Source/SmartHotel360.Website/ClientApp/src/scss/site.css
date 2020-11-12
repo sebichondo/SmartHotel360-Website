@@ -10650,7 +10650,7 @@ body {
   .sh-hero-buttons {
     display: flex;
     list-style: none;
-    margin-top: 7rem;
+    margin-top: 2rem;
     padding: 0; }
   .sh-hero-button {
     border: 1px solid #FFFFFF;
@@ -10661,23 +10661,24 @@ body {
     .sh-hero-button:hover {
       background-color: rgba(255, 255, 255, 0.25);
       transition: background-color 0.35s ease; }
+    .sh-hero-button-link:hover {
+      text-decoration: none; }
   .sh-hero-download_app {
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 1rem;
-    width: 6rem; }
-    @media screen and (min-width: 960px) {
+    height: 2rem;
+    width: 6rem;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 1rem; }
+    @media screen and (min-width: 720px) {
       .sh-hero-download_app {
-        height: 1.5rem;
-        width: 7.5rem; } }
-    .sh-hero-download_app--win {
-      background-image: url("/assets/images/windows.png"); }
-    .sh-hero-download_app--apple {
-      background-image: url("/assets/images/app_store.png"); }
-    .sh-hero-download_app--google {
-      background-image: url("/assets/images/google_play.png"); }
+        height: 2rem;
+        width: 7.5rem;
+        font-size: 1.125rem; } }
+    .sh-hero-download_app-subtitle {
+      font-size: 0.56rem; }
+      @media screen and (min-width: 720px) {
+        .sh-hero-download_app-subtitle {
+          font-size: 0.75rem; } }
   .sh-hero-title {
     color: #FFFFFF;
     font-size: 1.75rem;
@@ -10688,6 +10689,12 @@ body {
     @media screen and (min-width: 1110px) {
       .sh-hero-title {
         font-size: 2.625rem; } }
+  .sh-hero-subtitle {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1.375rem;
+    font-weight: 200;
+    margin-top: 4rem; }
   .sh-hero-wrapper {
     align-items: center;
     display: flex;
